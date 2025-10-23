@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Primeira Página JS</title>
+</head>
+<body>
+
+<h1>Aprendendo JavaScript</h1>
+
+<!-- Div onde o JS vai alterar o conteúdo -->
+<div id="mensagem">Clique no botão para ver a mensagem.</div>
+
+<!-- Botão que executa a função -->
+<button onclick="mostrarMensagem()">Clique Aqui</button>
+
+<!-- Bloco de script interno -->
+<script>
+// Função em JavaScript
+function mostrarMensagem() {
+// Acessa a div e troca o texto
+document.getElementById("mensagem").innerHTML = "Olá, você executou seu primeiro script
+JavaScript.";
+}
+</script>
+
+</body>
+</html>
