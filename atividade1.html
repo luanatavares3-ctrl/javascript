@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo Completo</title>
+<style>
+body { font-family: Arial; text-align: center; margin-top: 40px; }
+#caixa { border: 2px solid #4CAF50; padding: 20px; width: 300px; margin: auto; border-radius:
+10px; }
+button { margin-top: 15px; padding: 10px 20px; background: #4CAF50; color: white; border:
+none; border-radius: 5px; }
+button:hover { background: #45a049; }
+</style>
+</head>
+<body>
+<div id="caixa">
+<h2>Interaja com a página</h2>
+<div id="texto">Clique no botão abaixo</div>
+<button onclick="mudarTexto()">Mudar Texto</button>
+</div>
+<script>
+function mudarTexto() {
+let divTexto = document.getElementById("texto");
+divTexto.innerHTML = "Parabéns! Você alterou o conteúdo com JavaScript.";
+divTexto.style.color = "#4CAF50";
+}
+</script>
+</body>
+</html>
